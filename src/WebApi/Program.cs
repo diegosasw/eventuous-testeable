@@ -1,5 +1,6 @@
 using BasketballGame.Application;
 using BasketballGame.Domain;
+using Eventuous;
 using Eventuous.EventStore;
 using Eventuous.Projections.MongoDB;
 using Serilog;
@@ -35,8 +36,12 @@ finally
 	await Log.CloseAndFlushAsync();
 }
 
+return;
+
 static void ConfigureServices(IServiceCollection services, IConfiguration configuration)
 {
+	TypeMap.RegisterKnownEventTypes(typeof(Game).Assembly);
+	
 	services
 		.AddEventStoreClient(configuration["EventStore:ConnectionString"]!)
 		.AddAggregateStore<EsdbEventStore>()
@@ -55,6 +60,7 @@ static void Configure(WebApplication app)
 	var serviceProvider = app.Services;
 	var assemblyPath = $"/{typeof(Program).Assembly.GetName().Name!.ToLowerInvariant()}";
 
+	app.AddClientCommands();
 	app.UsePathBase(assemblyPath);
 	app.UseOpenApi(assemblyPath);
 	app.MapGet("/", () => "Hello World!");
