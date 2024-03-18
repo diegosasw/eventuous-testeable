@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>$(TargetFramework)</TargetFramework>
+        <ImplicitUsings>$(ImplicitUsings)</ImplicitUsings>
+        <Nullable>$(Nullable)</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BasketballGame\BasketballGame.csproj" />
+      <ProjectReference Include="..\Scoreboard\Scoreboard.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eventuous.Extensions.DependencyInjection" Version="$(EventuousVersion)" />
+      <PackageReference Include="Serilog.AspNetCore" Version="8.0.2-dev-00334" />
+      <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+    </ItemGroup>
+
+</Project>

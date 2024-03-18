@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(TargetFramework)</TargetFramework>
+        <ImplicitUsings>$(ImplicitUsings)</ImplicitUsings>
+        <Nullable>$(Nullable)</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eventuous" Version="$(EventuousVersion)" />
+      <PackageReference Include="Eventuous.EventStore" Version="$(EventuousVersion)" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0B6222CF-EAF5-452A-BA23-6ED1C6807690}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{39832770-2B9D-441B-80A0-BEB2A9682030}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketballGame", "src\BasketballGame\BasketballGame.csproj", "{1D83F480-EF7F-470F-A2FE-FEA702BC2382}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketballGame.UnitTests", "test\BasketballGame.UnitTests\BasketballGame.UnitTests.csproj", "{62999077-3D34-4A9C-BFD4-DF6778AC3140}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scoreboard", "src\Scoreboard\Scoreboard.csproj", "{3401D2AC-8A69-42A4-82EC-7F93E6EE98F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApi", "src\WebApi\WebApi.csproj", "{D3F666BD-231A-4A52-9001-368051893B02}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D83F480-EF7F-470F-A2FE-FEA702BC2382} = {0B6222CF-EAF5-452A-BA23-6ED1C6807690}
+		{62999077-3D34-4A9C-BFD4-DF6778AC3140} = {39832770-2B9D-441B-80A0-BEB2A9682030}
+		{3401D2AC-8A69-42A4-82EC-7F93E6EE98F5} = {0B6222CF-EAF5-452A-BA23-6ED1C6807690}
+		{D3F666BD-231A-4A52-9001-368051893B02} = {0B6222CF-EAF5-452A-BA23-6ED1C6807690}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1D83F480-EF7F-470F-A2FE-FEA702BC2382}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1D83F480-EF7F-470F-A2FE-FEA702BC2382}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1D83F480-EF7F-470F-A2FE-FEA702BC2382}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1D83F480-EF7F-470F-A2FE-FEA702BC2382}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62999077-3D34-4A9C-BFD4-DF6778AC3140}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62999077-3D34-4A9C-BFD4-DF6778AC3140}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62999077-3D34-4A9C-BFD4-DF6778AC3140}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62999077-3D34-4A9C-BFD4-DF6778AC3140}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3401D2AC-8A69-42A4-82EC-7F93E6EE98F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3401D2AC-8A69-42A4-82EC-7F93E6EE98F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3401D2AC-8A69-42A4-82EC-7F93E6EE98F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3401D2AC-8A69-42A4-82EC-7F93E6EE98F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3F666BD-231A-4A52-9001-368051893B02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3F666BD-231A-4A52-9001-368051893B02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3F666BD-231A-4A52-9001-368051893B02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3F666BD-231A-4A52-9001-368051893B02}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

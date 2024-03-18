@@ -1,0 +1,11 @@
+<Project>
+	<PropertyGroup Label="Common">
+		<TargetFramework>net8.0</TargetFramework>
+		<ImplicitUsings>Enable</ImplicitUsings>
+		<Nullable>Enable</Nullable>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Dependency Versions">
+		<EventuousVersion>0.15.0-beta.10.11</EventuousVersion>
+	</PropertyGroup>
+</Project>

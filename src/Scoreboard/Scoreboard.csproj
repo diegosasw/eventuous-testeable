@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(TargetFramework)</TargetFramework>
+        <ImplicitUsings>$(ImplicitUsings)</ImplicitUsings>
+        <Nullable>$(Nullable)</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BasketballGame\BasketballGame.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eventuous.AspNetCore.Web" Version="$(EventuousVersion)" />
+      <PackageReference Include="Eventuous.Projections.MongoDB" Version="$(EventuousVersion)" />
+    </ItemGroup>
+
+</Project>
