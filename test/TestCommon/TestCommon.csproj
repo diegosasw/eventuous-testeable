@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>$(TargetFramework)</TargetFramework>
+        <ImplicitUsings>$(ImplicitUsings)</ImplicitUsings>
+        <Nullable>$(Nullable)</Nullable>
+        <IsPackable>false</IsPackable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Eventuous" Version="$(EventuousVersion)" />
+      <PackageReference Include="xunit.extensibility.core" Version="2.4.2" />
+    </ItemGroup>
+
+</Project>
